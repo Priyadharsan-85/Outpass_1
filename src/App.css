@@ -1,0 +1,99 @@
+
+@import "tailwindcss";
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #e8f5e9 0%, #f0fff0 100%);
+  min-height: 100vh;
+}
+
+.LoginPage {
+  max-width: 420px;
+  margin: 48px auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 36px 28px 36px;
+  box-shadow: 0 6px 32px rgba(56, 142, 60, 0.10);
+  border: 1.5px solid #c8e6c9;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #388e3c;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  text-align: center;
+  color: #388e3c;
+  margin-bottom: 28px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user-role {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+  justify-content: center;
+  background: #f1f8e9;
+  border-radius: 10px;
+  padding: 14px 0 8px 0;
+  box-shadow: 0 1px 4px #c8e6c933;
+}
+
+.user-role label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  color: #388e3c;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.18s, color 0.18s;
+}
+
+.user-role input[type="radio"] {
+  accent-color: #43a047;
+  width: 18px;
+  height: 18px;
+}
+
+.user-role label:hover, .user-role input[type="radio"]:focus + label {
+  background: #c8e6c9;
+  color: #1b5e20;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #43a047;
+  color: white;
+  padding: 13px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px #43a04722;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+}
+
+.login-button:hover, .login-button:focus {
+  background-color: #388e3c;
+  box-shadow: 0 4px 16px #388e3c33;
+  transform: translateY(-2px) scale(1.02);
+}
