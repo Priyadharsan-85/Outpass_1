@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./HOD.css";
 import { FaCheck, FaTimes, FaClock, FaCheckCircle, FaTimesCircle, FaSignOutAlt } from "react-icons/fa";
-import { notifyRequestStatus } from '../../utils/emailService';
+import { notifyRequestStatus } from '../../utils/emailservice';
 
 const STORAGE_KEY = "student_outpass_requests";
 const INITIAL_REQUESTS = { pending: [], approved: [], rejected: [] };

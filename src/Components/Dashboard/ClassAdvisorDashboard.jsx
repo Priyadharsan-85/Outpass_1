@@ -9,11 +9,6 @@ const INITIAL_REQUESTS = { pending: [], approved: [], rejected: [] };
 const ClassAdvisorDashboard = () => {
   const [tab, setTab] = useState('pending');
   const [viewDetails, setViewDetails] = useState(null);
-  const [advisorInfo] = useState({
-    name: "Dr. Smith",
-    department: "Computer Science",
-    classHandled: "CS 3rd Year"
-  });
   const [requests, setRequests] = useState(INITIAL_REQUESTS);
   const navigate = useNavigate();
   useEffect(() => {

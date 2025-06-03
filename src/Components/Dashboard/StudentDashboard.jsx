@@ -20,8 +20,8 @@ const StudentDashboard = () => {
     outDate: "",
     returnDate: "",
   });
-  const [studentName, setStudentName] = useState(() => localStorage.getItem('studentName') || "Student");
-  const [studentDept, setStudentDept] = useState(() => localStorage.getItem('studentDept') || "Department");
+  const [studentName] = useState(() => localStorage.getItem('studentName') || "Student");
+  const [studentDept] = useState(() => localStorage.getItem('studentDept') || "Department");
   const [showForm, setShowForm] = useState(false);
   const [viewDetails, setViewDetails] = useState(null);
   const navigate = useNavigate();
@@ -119,7 +119,7 @@ const StudentDashboard = () => {
     });
   };
 
-  const renderTable = (data, statusLabel) => (
+  const renderTable = (data) => (
     <div className="table-container" style={{ opacity: viewDetails ? 0.2 : 1 }}>
       <table className="student-table">
         <thead>
@@ -242,7 +242,7 @@ const StudentDashboard = () => {
         )}
 
         <div className="table-wrapper">
-          {renderTable(requests[tab], `${tab.charAt(0).toUpperCase() + tab.slice(1)} On`)}
+          {renderTable(requests[tab])}
         </div>
 
         {viewDetails && (
